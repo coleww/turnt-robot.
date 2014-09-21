@@ -11,3 +11,5 @@ gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
 
 gem "minitest", group: :test
+
+gem 'protected_attributes'
