@@ -10,5 +10,4 @@ gem 'jquery-rails'
 
 gem 'uglifier', '>= 1.3.0'
 
-gem "minitest-rails", group: :test
-# gem "minitest-rails-capybara", group: :test
+gem "minitest", group: :test
