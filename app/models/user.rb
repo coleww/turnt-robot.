@@ -10,10 +10,13 @@ class User < ActiveRecord::Base
             },
             allow_nil: true
 
-
-
-  # validates :username,
-  #           presence: true
+  validates :username,
+            presence: true,
+            uniqueness: true,
+            length: {
+              minimum: 3,
+              maximum: 255
+            }
 
 
   def status
