@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserAuthTest < Minitest::Test
+class UserCredentialsTest < Minitest::Test
 
   def teardown
     User.destroy_all

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  # dis seems wrong...
+
   attr_accessible :status, :username, :password
 
   has_secure_password
@@ -19,12 +19,8 @@ class User < ActiveRecord::Base
               maximum: 255
             }
 
-
   def status
     (read_attribute :status) || '<strong>Hello World!</strong>'
   end
-
-protected
-
 
 end
