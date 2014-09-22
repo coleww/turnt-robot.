@@ -38,7 +38,7 @@ class AuthTest < IntegrationTest
     click_button 'login'
     assert page.has_content? 'hello'
     click_button 'logout'
-    assert page.has_content? 'login'
+    assert page.has_button? 'login'
   end
 
 end

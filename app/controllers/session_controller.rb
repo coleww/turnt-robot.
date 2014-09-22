@@ -6,9 +6,15 @@ class SessionController < ApplicationController
   def create
     user = User.find_by_username params[:username]
     if user && (user.authenticate params[:password])
-      render text: 'hello turnt_up_robot!'
+      @user = login! user
+      redirect_to '/all'
     else
       render text: 'invalid credentials, try again or go away please'
     end
+  end
+
+  def destroy
+    logout!
+    redirect_to '/'
   end
 end
