@@ -1,10 +1,12 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :email, null: false, limit: 255
+      t.string :username, null: false, limit: 255
       t.string :password_digest, null: false, limit: 255
-      t.text :status, null: false, limit: 1000
+      t.text :status, limit: 1024
       t.timestamps
     end
+
+    add_index :users, :username, unique: true
   end
 end
