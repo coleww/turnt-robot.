@@ -1,7 +1,11 @@
 class SessionController < ApplicationController
 
   def new
-    render text: "login"
+
   end
 
+
+  def create
+    render text: 'hello turnt_up_robot!'
+  end
 end
