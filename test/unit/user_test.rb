@@ -12,7 +12,7 @@ class UserTest < Minitest::Test
 
 
   def test_username_must_be_unique
-    refute User.new({:username => "agiles", :password => "hella_long"}).save
+    refute (User.new username: "agiles", password: "hella_long").save
   end
 
   def test_status_defaults_to_hello_world
