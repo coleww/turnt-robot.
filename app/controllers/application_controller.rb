@@ -19,4 +19,10 @@ class ApplicationController < ActionController::Base
     @current_user ||= (User.find_by_session_token session[:session_token])
   end
 
+  def auth_required
+    flash[:error] = 'You must login first'
+    redirect_to '/' if current_user.nil?
+    true
+  end
+
 end

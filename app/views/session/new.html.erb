@@ -1,3 +1,5 @@
+<%= flash[:error] %>
+
 
 <%= form_tag 'session', method: :post do %>
   <%= text_field_tag :username, nil, placeholder: 'username' %>

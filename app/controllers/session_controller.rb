@@ -7,7 +7,7 @@ class SessionController < ApplicationController
     user = User.find_by_username params[:username]
     if user && (user.authenticate params[:password])
       @user = login! user
-      redirect_to '/all'
+      redirect_to '/home'
     else
       render text: 'invalid credentials, try again or go away please'
     end
