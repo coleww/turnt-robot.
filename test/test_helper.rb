@@ -13,3 +13,10 @@ class IntegrationTest < Minitest::Test
     Capybara.use_default_driver
   end
 end
+
+def logan uname, password
+  visit '/'
+  fill_in 'username', with: uname
+  fill_in 'password', with: password
+  click_button 'login'
+end
