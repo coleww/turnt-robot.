@@ -20,3 +20,7 @@ def logan uname, password
   fill_in 'password', with: password
   click_button 'login'
 end
+
+User.create! username: 'turnt_up_robot', password: '1234abcd'
+
+Minitest.after_run { (u = User.find_by_username 'turnt_up_robot') ? u.destroy : false }

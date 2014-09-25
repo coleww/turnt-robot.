@@ -3,11 +3,11 @@ require 'test_helper'
 class UserTest < Minitest::Test
 
   def setup
-    @user = User.create!({:username => "agiles", :password => "hella_long"})
+    @user = User.create! username: "agiles", password: "hella_long"
   end
 
   def teardown
-    User.destroy_all
+    (User.find_by_username 'agiles').destroy
   end
 
 
