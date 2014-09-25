@@ -10,7 +10,11 @@ gem 'jquery-rails'
 
 gem 'uglifier', '>= 1.3.0'
 
-gem "minitest", group: :test
-gem "capybara", group: :test
+
+group :test do
+  gem 'simplecov', :require => false
+  gem "minitest"
+  gem "capybara"
+end
 
 gem 'protected_attributes'
