@@ -44,6 +44,8 @@ GEM
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.1.2)
+      railties (>= 3.1.0)
     json (1.8.1)
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
@@ -122,6 +124,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   capybara
   jquery-rails
+  jquery-ui-rails
   minitest
   pg
   protected_attributes
