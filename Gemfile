@@ -18,3 +18,5 @@ group :test do
 end
 
 gem 'protected_attributes'
+
+gem 'rails-html-sanitizer'
