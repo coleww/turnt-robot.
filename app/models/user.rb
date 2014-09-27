@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   end
 
   def status= status
-    write_attribute :status, (Rails::Html::WhiteListSanitizer.new.sanitize status, tags: %w(span), attributes: %w(class))
+    write_attribute :status, (Rails::Html::WhiteListSanitizer.new.sanitize status, tags: %w(span), attributes: %w(class))[0...1024]
   end
 
   def reset_session_token!
