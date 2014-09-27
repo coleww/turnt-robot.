@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Turnt Up Robot</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-  <% if !!@user %>
-    <%= render partial: 'header' %>
-  <% end %>
+  <head>
 
+    <title>Turnt Up Robot</title>
 
-<div style="margin-left: 30px;">
-  <%= yield %>
-</div>
-</body>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+
+    <% if !!@user %>
+      <%= render partial: 'header' %>
+    <% end %>
+
+    <div style="margin-left: 30px;">
+      <%= yield %>
+    </div>
+
+  </body>
+
 </html>
