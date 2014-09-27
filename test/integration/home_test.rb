@@ -10,7 +10,6 @@ class HomeTest < IntegrationTest
 
   def test_explains_the_thing
     assert_equal true, (page.has_content? 'This is a social network!')
-    assert_equal true, (page.has_link? 'Make a new status!', href: '/status')
   end
 
   def test_shows_current_status

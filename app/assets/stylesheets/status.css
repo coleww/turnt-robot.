@@ -8,6 +8,7 @@ div, span {
   overflow:hidden;
   width: 255px;
   height: 275px;
+  border: 1px solid black;
 }
 
 .status {

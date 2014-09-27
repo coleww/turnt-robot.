@@ -1,1 +1,9 @@
-<%= button_to "logout", '/session', method: :delete %>
+<ul class='nav'>
+  <li><%= link_to 'home', '/home' %></li>
+
+  <li><%= link_to 'index', '/all' %></li>
+
+  <li><%= link_to 'post', '/status' %></li>
+
+  <li><%= button_to "logout", '/session', method: :delete %></li>
+</ul>

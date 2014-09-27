@@ -1,12 +1,5 @@
 <% @users.try(:each) do |user| %>
 
-  <div class='user-status'>
-    <div class='status'>
-      <%= raw user.status %>
-    </div>
-    <span class='user'>
-      <%= user.username %>: <%= user.updated_at %>
-    </span>
-  </div>
+  <%= render partial: 'status', locals: { user: user } %>
 
 <% end %>
