@@ -10,6 +10,9 @@
 .red{
   color: red;
 }
+.yellow{
+  color: yellow;
+}
 .blue{
   color: blue;
 }
@@ -43,3 +46,4 @@
 .border {
   border: 1px solid black;
 }
+
