@@ -18,6 +18,7 @@ class StatusController < ApplicationController
   end
 
   def index
+    @user = current_user
     @users = User.order("updated_at desc").limit(10)
   end
 

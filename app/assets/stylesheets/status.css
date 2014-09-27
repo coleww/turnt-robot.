@@ -1,0 +1,19 @@
+div, span {
+  box-sizing: border-box;
+}
+
+.user-status {
+  float: left;
+  display:block;
+  overflow:hidden;
+  width: 255px;
+  height: 275px;
+}
+
+.status {
+  height: 255px;
+}
+
+.user {
+  height: 20px;
+}
