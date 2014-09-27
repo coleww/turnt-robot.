@@ -34,7 +34,11 @@ class User < ActiveRecord::Base
   end
 
   def status
-    (read_attribute :status) || '<strong>Hello World!</strong>'
+    (read_attribute :status) || '<span>Hello World!</span>'
+  end
+
+  def status= status
+    write_attribute :status, (Rails::Html::WhiteListSanitizer.new.sanitize status, tags: %w(span), attributes: %w(class))
   end
 
   def reset_session_token!

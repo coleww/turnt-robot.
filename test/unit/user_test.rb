@@ -16,7 +16,21 @@ class UserTest < Minitest::Test
   end
 
   def test_status_defaults_to_hello_world
-    assert_equal @user.status, '<strong>Hello World!</strong>'
+    assert_equal @user.status, '<span>Hello World!</span>'
+  end
+
+  def test_status_allows_spans_and_classes
+    @user.status = '<span class="center">Hello Internet!</span>'
+    @user.save!
+    @user.reload
+    assert_equal @user.status, '<span class="center">Hello Internet!</span>'
+  end
+
+  def test_status_allows_only_spans_and_classes
+    @user.status = '<script>alert(Hello World!);</script><style>background-color: red;</style><strong><center>HAXXORED!</strong></center>'
+    @user.save!
+    @user.reload
+    assert_equal @user.status, 'alert(Hello World!);background-color: red;HAXXORED!'
   end
 
 end
