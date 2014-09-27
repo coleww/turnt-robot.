@@ -46,4 +46,17 @@
 .border {
   border: 1px solid black;
 }
+.big{
+  font-size: 20px;
+}
+.large{
+  font-size: 40px;
+}
+.larger{
+  font-size: 60px;
+}
+.largest{
+  font-size: 80px;
+}
+
 
