@@ -17,5 +17,6 @@ that status can contain <span> tags that use pre-defined classes, for example:
     <span class='big red'>HI</span>
 
 
-http://turnt-up-robot.herokuapp.com/
+[![turnt up robots](./turnt.png)](http://turnt-up-robot.herokuapp.com/)
+
 
