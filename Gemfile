@@ -20,3 +20,4 @@ end
 gem 'protected_attributes'
 
 gem 'rails-html-sanitizer'
+gem 'rails_12factor'
