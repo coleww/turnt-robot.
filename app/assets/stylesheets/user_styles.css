@@ -1,5 +1,7 @@
 .center{
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .left{
   float: left;
@@ -9,15 +11,15 @@
 }
 .red{
   color: red;
+  border-color: green;
 }
 .yellow{
   color: yellow;
+  border-color: purple;
 }
 .blue{
   color: blue;
-}
-.blink{
-  text-decoration: blink;
+  border-color: orange;
 }
 .bold {
   font-weight: bold;
@@ -50,13 +52,22 @@
   font-size: 20px;
 }
 .large{
-  font-size: 40px;
+  font-size: 30px;
 }
 .larger{
-  font-size: 60px;
+  font-size: 40px;
 }
 .largest{
-  font-size: 80px;
+  font-size: 50px;
 }
-
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+  to { visibility: hidden; }
+}
 
