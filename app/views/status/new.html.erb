@@ -7,6 +7,8 @@ Available classes for yr sick spans!
 </ol>
 
 <%= form_tag 'status', method: :post do %>
-  <%= text_area_tag :status, @user.status, escape: false, maxlength: 1024 %>
+  <%= text_area_tag :status, @user.status, escape: false, maxlength: 1024, size: '90x30'  %>
+  <br />
   <%= submit_tag "update status" %>
+  (1024 char limit.)
 <% end %>

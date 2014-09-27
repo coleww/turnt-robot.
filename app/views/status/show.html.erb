@@ -1,13 +1,16 @@
-  hello <%= @user.username %>!
-  <br />
-  This is a social network!
-  <br />
-  You get one status! Make a new status? Wipes the old status! No history!
-  <br />
-  Yr status can include a subset of html5/css3, and that subset is span tags and pre-defined classes.
-  <br />
-  This is your current status:
+<div style="margin-left: 30px;">
 
-  <br /><br /><br />
+hello <%= @user.username %>!
+<br /><br />
+This is a social network!
+<br /><br />
+You get one status! Make a new status? Wipes the old status! No history!
+<br /><br />
+Yr status can include a subset of html5/css3, and that subset is span tags and pre-defined classes.
+<br /><br />
+This is your current status:
 
-  <%= render partial: 'status', locals: { user: @user } %>
+<br /><br /><br /><br />
+
+<%= render partial: 'status', locals: { user: @user } %>
+</div>
