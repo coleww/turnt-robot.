@@ -1,5 +1,15 @@
-i am making a social network
+# Turnt Up Robot
+------------------
 
-TODO:
+### an ephemeral dirt style social network.
 
-replace "Hello World!" with something more creative.
+
+users are given 1 status which can be up to 1024 characters in length. 
+
+that status can contain <span> tags that use pre-defined classes, for example:
+
+    <span class='big red'>HI</span>
+
+
+http://turnt-up-robot.herokuapp.com/
+
