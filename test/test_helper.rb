@@ -2,7 +2,8 @@ ENV["RAILS_ENV"] = "test"
 
 require 'simplecov'
 SimpleCov.start
-
+require 'coveralls'
+Coveralls.wear!
 require File.expand_path("../../config/environment", __FILE__)
 
 require "minitest/autorun"

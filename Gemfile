@@ -15,6 +15,7 @@ group :test do
   gem 'simplecov', :require => false
   gem "minitest"
   gem "capybara"
+  gem "coveralls"
 end
 
 gem 'protected_attributes'
