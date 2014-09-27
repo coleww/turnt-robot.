@@ -22,6 +22,10 @@ class User < ActiveRecord::Base
   validates :session_token,
             presence: true
 
+  validates :status,
+            length: {
+              maximum: 1024
+            }
 
   after_initialize :ensure_session_token
 

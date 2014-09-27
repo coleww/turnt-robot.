@@ -19,6 +19,12 @@ class UserTest < Minitest::Test
     assert_equal @user.status, '<span class="center">Hello World!</span>'
   end
 
+  def test_status_limited_to_1024
+    @user.status = 'a' * 1030
+    @user.save!
+    assert_equal @user.status, 'a' * 1024
+  end
+
   def test_status_allows_spans_and_classes
     @user.status = '<span class="center">Hello Internet!</span>'
     @user.save!
