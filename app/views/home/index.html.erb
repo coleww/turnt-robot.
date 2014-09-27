@@ -1,3 +1,20 @@
+<%= button_to "logout", '/session', method: :delete %>
+
 hello <%= @user.username %>!
 
-<%= button_to "logout", '/session', method: :delete %>
+<div class="container">
+  This is a social network!
+
+  You get one status! Make a new status? Wipes the old status! No history!
+
+  Yr status can include a subset of html5/css3, and that subset is span tags and pre-defined classes.
+
+  This is your current status:
+
+  <div class="status">
+    <%= raw @user.status %>
+  </div>
+
+  <%= link_to 'Make a new status!', '/post' %>
+
+</div>

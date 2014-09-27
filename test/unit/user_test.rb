@@ -16,7 +16,7 @@ class UserTest < Minitest::Test
   end
 
   def test_status_defaults_to_hello_world
-    assert_equal @user.status, '<span>Hello World!</span>'
+    assert_equal @user.status, '<span class="center">Hello World!</span>'
   end
 
   def test_status_allows_spans_and_classes
