@@ -1,0 +1,10 @@
+<%= button_to "logout", '/session', method: :delete %>
+
+<% @users.try(:each) do |user| %>
+  <div class='status'>
+    <%= raw user.status %>
+  </div>
+  <span class='uname'>
+    <%= user.username %>: <%= user.updated_at %>
+  </span>
+<% end %>

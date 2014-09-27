@@ -15,7 +15,7 @@ class AuthTest < IntegrationTest
   end
 
   def test_auth_required_on_post_page
-    visit '/new'
+    visit '/status'
     assert page.has_content? 'login'
   end
 
