@@ -2,7 +2,7 @@
 ------------------
 [![Build Status](https://travis-ci.org/coleww/turnt-robot..svg?branch=master)](https://travis-ci.org/coleww/turnt-robot.)
 
-[![Coverage Status](https://coveralls.io/repos/coleww/turnt-robot./badge.png?branch=master)](https://coveralls.io/r/coleww/turnt-robot.?branch=master)
+[![Coverage Status](https://coveralls.io/repos/coleww/turnt-robot./badge.png)](https://coveralls.io/r/coleww/turnt-robot.)
 
 ### an ephemeral dirt style social network.
 
