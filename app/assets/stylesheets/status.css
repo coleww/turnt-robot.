@@ -2,7 +2,7 @@ div, span {
   box-sizing: border-box;
 }
 
-.user-status {
+div.user-status {
   float: left;
   display:block;
   overflow:hidden;
@@ -11,10 +11,10 @@ div, span {
   border: 1px solid black;
 }
 
-.status {
+div.status {
   height: 255px;
 }
 
-.user {
+div.user {
   height: 20px;
 }
