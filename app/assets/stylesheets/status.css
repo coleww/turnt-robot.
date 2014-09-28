@@ -7,7 +7,7 @@ div.user-status {
   display:inline-block;
   overflow:hidden;
   width: 255px;
-  height: 275px;
+  height: 300px;
   border: 1px solid black;
 }
 
@@ -17,5 +17,5 @@ div.status {
 }
 
 div.user {
-  height: 20px;
+  height: 45px;
 }
