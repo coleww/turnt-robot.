@@ -58,17 +58,17 @@
 .line-through{
   text-decoration: line-through;
 }
-.dashed-border {
+.dash-brdr {
   border: 1px dashed black;
 }
-.dotted-border {
+.dot-brdr {
   border: 1px dotted black;
 }
-.double-border {
+.dbl-brdr {
   border: 1px double black;
 }
-.border {
-  border: 1px solid black;
+.brdr {
+  border-style: solid;
 }
 /**/
 /**/
