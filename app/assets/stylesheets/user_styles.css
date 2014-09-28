@@ -65,10 +65,10 @@
   text-decoration: line-through;
 }
 .dash-brdr {
-  border: 1px dashed black;
+  border-style: dashed;
 }
 .dot-brdr {
-  border: 1px dotted black;
+  border-style: dotted;
 }
 .brdr {
   border-style: solid;
