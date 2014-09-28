@@ -19,7 +19,7 @@ class StatusController < ApplicationController
 
   def index
     @user = current_user
-    @users = User.order("updated_at desc").limit(10)
+    @users = (User.order("updated_at desc").page params[:page]).per 12
   end
 
 end

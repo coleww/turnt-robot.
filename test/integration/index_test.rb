@@ -11,10 +11,13 @@ class IndexTest < IntegrationTest
     click_button 'logout'
   end
 
-  def test_index
-    # make some users w/ posts, 1 > the page
-    # verify that the stuff is there
-    # verif
+  def test_index_pagination
+    12.times {|i| User.create username: "bob#{i}", password: 'geegosh', status: 'test!' }
+    visit 'all'
+    assert page.has_content? 'bob1'
+    refute page.has_content? 'bob0'
+    click_link 'older'
+    assert page.has_content? 'bob0'
   end
 
 end
