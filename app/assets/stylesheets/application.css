@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+
+p, li {font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;}
+h1, h2, h3, h4, h5 {font-family: Rockwell, “Courier Bold”, Courier, Georgia, Times, “Times New Roman”, serif;}
