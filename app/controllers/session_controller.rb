@@ -1,6 +1,8 @@
 class SessionController < ApplicationController
-
   def new
+    if !!current_user
+      redirect_to '/home'
+    end
   end
 
   def create
