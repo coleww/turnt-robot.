@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
             uniqueness: true,
             length: {
               minimum: 3,
-              maximum: 255
+              maximum: 24
             }
 
   validates :session_token,
