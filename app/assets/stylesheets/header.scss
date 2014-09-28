@@ -1,16 +1,9 @@
 ul.nav {
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
   li {
-    border: 1px solid black;
     display: inline-block;
-    background-color: aliceblue;
-    padding: 3px;
     margin: 3px;
-    height: 20px;
-    width: 127px;
-    text-align: center;
-    border-radius: 3px;
-    background-color: aliceblue;
   }
 }

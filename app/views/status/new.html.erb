@@ -1,15 +1,19 @@
 
 
 <div style="display: inline-block;">
+  <h3>SOURCE</h3>
   <%= form_tag 'status', method: :post do %>
-    <%= submit_tag "UPDATE" %>
-    <br />
-    <%= text_area_tag :status, @user.status, escape: false, maxlength: 1024, size: '50x23', id: "status-form"  %>
+    <div class="user-status">
+      <%= text_area_tag :status, @user.status, escape: false, maxlength: 1024, size: '50x19', id: "status-form"  %>
+      <br />
+      <%= submit_tag "UPDATE" %>
+    </div>
+
   <% end %>
 </div>
 
 <div style="display: inline-block;">
-  <h5>PREVIEW</h5>
+  <h3>PREVIEW</h3>
   <%= render partial: 'status', locals: {user: @user} %>
 </div>
 <br /><br />
