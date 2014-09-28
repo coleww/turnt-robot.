@@ -28,8 +28,4 @@ class PostTest < IntegrationTest
     assert_equal false, (page.has_content? 'a' * 1025)
   end
 
-  def test_shows_available_classes
-    assert_equal true, (page.has_content? 'Available classes for yr sick spans!')
-  end
-
 end
