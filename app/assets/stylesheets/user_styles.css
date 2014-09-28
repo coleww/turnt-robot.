@@ -31,6 +31,9 @@
 /**/
 /**/
 .sm{
+  font-size: 5px;
+}
+.min{
   font-size: 10px;
 }
 .big{
@@ -40,10 +43,10 @@
   font-size: 30px;
 }
 .larger{
-  font-size: 40px;
+  font-size: 35px;
 }
 .largest{
-  font-size: 50px;
+  font-size: 40px;
 }
 /**/
 /**/
