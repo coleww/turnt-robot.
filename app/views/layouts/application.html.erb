@@ -12,12 +12,10 @@
   </head>
 
   <body>
-
-    <% if !!@user %>
-      <%= render partial: 'header' %>
-    <% end %>
-
     <center>
+      <% if !!@user %>
+        <%= render partial: 'header' %>
+      <% end %>
       <%= yield %>
     </center>
 
