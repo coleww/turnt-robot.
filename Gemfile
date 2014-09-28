@@ -14,6 +14,7 @@ gem 'protected_attributes'
 
 gem 'rails-html-sanitizer'
 
+gem 'kaminari'
 
 group :test do
   gem 'simplecov', :require => false
