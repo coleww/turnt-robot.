@@ -10,6 +10,10 @@ gem 'jquery-rails'
 
 gem 'uglifier', '>= 1.3.0'
 
+gem 'protected_attributes'
+
+gem 'rails-html-sanitizer'
+
 
 group :test do
   gem 'simplecov', :require => false
@@ -18,10 +22,10 @@ group :test do
   gem "coveralls"
 end
 
-gem 'protected_attributes'
+group :production do
+  gem 'rails_12factor'
+  gem 'unicorn'
+  gem 'newrelic_rpm'
+end
 
-gem 'rails-html-sanitizer'
-gem 'rails_12factor'
-gem 'unicorn'
-gem 'newrelic_rpm'
 ruby '2.0.0'
