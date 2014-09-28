@@ -30,6 +30,9 @@
 /**/
 /**/
 /**/
+.sm{
+  font-size: 10px;
+}
 .big{
   font-size: 20px;
 }
@@ -63,9 +66,6 @@
 }
 .dot-brdr {
   border: 1px dotted black;
-}
-.dbl-brdr {
-  border: 1px double black;
 }
 .brdr {
   border-style: solid;
