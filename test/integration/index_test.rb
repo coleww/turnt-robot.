@@ -17,7 +17,7 @@ class IndexTest < IntegrationTest
     assert page.has_content? User.order("updated_at desc")[11].username
     refute page.has_content? User.order("updated_at desc")[12].username
     click_link 'older'
-    assert page.has_content? User.order("updated_at desc")[11].username
+    assert page.has_content? User.order("updated_at desc")[12].username
   end
 
 end
