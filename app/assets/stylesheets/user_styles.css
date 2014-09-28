@@ -1,7 +1,21 @@
+/**/
+/**/
+/**/
+/* positioning */
+/**/
+/**/
+/**/
 .center{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.middle{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .left{
   float: left;
@@ -9,45 +23,13 @@
 .right{
   float: right;
 }
-.red{
-  color: red;
-  border-color: green;
-}
-.yellow{
-  color: yellow;
-  border-color: purple;
-}
-.blue{
-  color: blue;
-  border-color: orange;
-}
-.bold {
-  font-weight: bold;
-}
-.italic {
-  font-style: italic;
-}
-.round {
-  border-radius: 15px;
-}
-.circular {
-  border-radius: 100%;
-}
-.underline{
-  text-decoration: underline;
-}
-.overline{
-  text-decoration: overline;
-}
-.line-through{
-  text-decoration: line-through;
-}
-.dashed-border {
-  border: 1px dashed black;
-}
-.border {
-  border: 1px solid black;
-}
+/**/
+/**/
+/**/
+/* size */
+/**/
+/**/
+/**/
 .big{
   font-size: 20px;
 }
@@ -60,6 +42,68 @@
 .largest{
   font-size: 50px;
 }
+/**/
+/**/
+/**/
+/* borders and lines */
+/**/
+/**/
+/**/
+.underline{
+  text-decoration: underline;
+}
+.overline{
+  text-decoration: overline;
+}
+.line-through{
+  text-decoration: line-through;
+}
+.dashed-border {
+  border: 1px dashed black;
+}
+.dotted-border {
+  border: 1px dotted black;
+}
+.double-border {
+  border: 1px double black;
+}
+.border {
+  border: 1px solid black;
+}
+/**/
+/**/
+/**/
+/* shape */
+/**/
+/**/
+/**/
+.round {
+  border-radius: 15px;
+}
+.circular {
+  border-radius: 100%;
+}
+/**/
+/**/
+/**/
+/* style */
+/**/
+/**/
+/**/
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+/**/
+/**/
+/**/
+/* behaviour/fx */
+/**/
+/**/
+/**/
+
 .blink {
   animation: blink 1s steps(5, start) infinite;
   -webkit-animation: blink 1s steps(5, start) infinite;
@@ -70,8 +114,6 @@
 @-webkit-keyframes blink {
   to { visibility: hidden; }
 }
-
-
 
 /* FONTS */
 .georgia {font-family: Georgia, serif;}
