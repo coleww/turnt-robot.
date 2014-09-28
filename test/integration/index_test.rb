@@ -12,12 +12,12 @@ class IndexTest < IntegrationTest
   end
 
   def test_index_pagination
-    12.times {|i| User.create username: "bob#{i}", password: 'geegosh', status: 'test!' }
+    13.times {|i| User.create username: "bob#{i}", password: 'geegosh', status: 'test!' }
     visit 'all'
-    assert page.has_content? 'bob1'
-    refute page.has_content? 'bob0'
+    assert page.has_content? User.order("updated_at desc")[11].username
+    refute page.has_content? User.order("updated_at desc")[12].username
     click_link 'older'
-    assert page.has_content? 'bob0'
+    assert page.has_content? User.order("updated_at desc")[11].username
   end
 
 end
