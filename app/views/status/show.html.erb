@@ -1,9 +1,9 @@
 <h1>hello <%= @user.username %>!</h1>
-<p style='width: 375px;'>This is an ephemeral text-based social network.
-You get one status! Make a new status?
-Wipes the old status! No history!
-You can style yr status with span's and pre-defined CSS classes.
+<p style='width: 375px;'>this is an ephemeral text-based social network.
+you get one status. make a new status?
+wipes the old status! no history!
+you can style yr status with html span's and pre-defined CSS classes if you like.
 </p>
-<h4>This is your current status:</h4>
+<h4>this is your current status:</h4>
 
 <%= render partial: 'status', locals: { user: @user } %>

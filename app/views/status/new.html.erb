@@ -1,26 +1,28 @@
 
 
 <div style="display: inline-block;">
-  <h3>SOURCE</h3>
+  <h3>source</h3>
   <%= form_tag 'status', method: :post do %>
     <div class="user-status">
       <%= text_area_tag :status, @user.status, escape: false, maxlength: 1024, size: '50x19', id: "status-form"  %>
       <br />
-      <%= submit_tag "UPDATE" %>
+      <%= submit_tag "update" %>
     </div>
 
   <% end %>
 </div>
 
 <div style="display: inline-block;">
-  <h3>PREVIEW</h3>
+  <h3>previes</h3>
   <%= render partial: 'status', locals: {user: @user} %>
 </div>
 <br /><br />
-<h4>CLASSES 4 SPANS</h4>
+<h4>classes 4 spans</h4>
 <br /><br />
 <%= render partial: 'styles' %>
-<br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+
 <%= javascript_tag do %>
   var $status = $(".status");
   var $form = $("#status-form");
