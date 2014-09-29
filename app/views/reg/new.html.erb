@@ -1,0 +1,12 @@
+<%= flash[:error] %>
+
+
+<%= form_tag 'register', method: :post do %>
+  <%= text_field_tag :username, nil, placeholder: 'username' %>
+
+  <%= password_field_tag :password, nil, placeholder: 'password' %>
+
+  <%= text_field_tag :token, params[:token], placeholder: 'token' %>
+
+  <%= submit_tag "register" %>
+<% end %>
