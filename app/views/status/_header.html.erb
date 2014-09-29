@@ -1,8 +1,8 @@
 <ul class='nav'>
-  <li><%= link_to_unless_current 'home', '/home' %></li>
+  <li><%= button_to 'home', '/home', method: :get %></li>
 
-  <li><%= link_to_unless_current 'index', '/all' %></li>
+  <li><%= button_to 'index', '/all', method: :get %></li>
 
-  <li><%= link_to_unless_current 'post', '/status' %></li>
+  <li><%= button_to 'post', '/status', method: :get %></li>
   <li><%= button_to "logout", '/session', method: :delete %></li>
 </ul>
