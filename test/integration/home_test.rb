@@ -9,7 +9,7 @@ class HomeTest < IntegrationTest
 
 
   def test_explains_the_thing
-    assert_equal true, (page.has_content? 'This is a social network!')
+    assert_equal true, (page.has_content? 'This is an ephemeral text-based social network')
   end
 
   def test_shows_current_status
