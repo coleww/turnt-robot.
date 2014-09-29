@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   end
 
   def status
-    (read_attribute :status) || '<span class="center">Hello World!</span>'
+    (read_attribute :status) || '<span class="center">hello world!</span>'
   end
 
   def status= status

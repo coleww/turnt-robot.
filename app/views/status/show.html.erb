@@ -1,13 +1,9 @@
-hello <%= @user.username %>!
-<br /><br />
-This is a social network!
-<br /><br />
-You get one status! Make a new status? Wipes the old status! No history!
-<br /><br />
-Yr status can include a subset of html5/css3, and that subset is span tags and pre-defined classes.
-<br /><br />
-This is your current status:
-
-<br /><br /><br /><br />
+<h1>hello <%= @user.username %>!</h1>
+<p style='width: 375px;'>this is an ephemeral text-based social network.
+you get one status. make a new status?
+wipes the old status! no history!
+you can style yr status with html span's and pre-defined CSS classes if you like.
+</p>
+<h4>this is your current status:</h4>
 
 <%= render partial: 'status', locals: { user: @user } %>

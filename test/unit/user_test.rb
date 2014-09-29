@@ -15,7 +15,7 @@ class UserTest < Minitest::Test
   end
 
   def test_status_defaults_to_hello_world
-    assert_equal @user.status, '<span class="center">Hello World!</span>'
+    assert_equal @user.status, '<span class="center">hello world!</span>'
   end
 
   def test_status_limited_to_1024
@@ -25,10 +25,10 @@ class UserTest < Minitest::Test
   end
 
   def test_status_allows_spans_and_classes
-    @user.status = '<span class="center">Hello Internet!</span>'
+    @user.status = '<span class="center">hello internet!</span>'
     @user.save!
     @user.reload
-    assert_equal @user.status, '<span class="center">Hello Internet!</span>'
+    assert_equal @user.status, '<span class="center">hello internet!</span>'
   end
 
   def test_status_allows_only_spans_and_classes
