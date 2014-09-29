@@ -10,7 +10,6 @@ class UserTest < Minitest::Test
     (User.find_by_username 'agiles').destroy
   end
 
-
   def test_username_must_be_unique
     refute (User.new username: "agiles", password: "hella_long").save
   end
