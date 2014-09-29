@@ -3,9 +3,9 @@ require 'test_helper'
 
 class AuthTest < IntegrationTest
 
-  def test_user_cannot_signup
+  def test_user_can_signup_i_guess
     visit '/'
-    refute page.has_content? 'signup'
+    assert page.has_content? 'register'
   end
 
   def test_auth_required_on_index_page
