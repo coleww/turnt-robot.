@@ -13,7 +13,7 @@ class IndexTest < IntegrationTest
 
   def test_index_pagination
     13.times {|i| User.create username: "bob#{i}", password: 'geegosh', status: 'test!' }
-    visit 'all'
+    visit '/'
     assert page.has_content? User.order("updated_at desc").first.username
     refute page.has_content? User.order("updated_at desc").last.username
     click_link 'older'

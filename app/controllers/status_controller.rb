@@ -1,6 +1,6 @@
 class StatusController < ApplicationController
 
-  before_filter :auth_required
+  before_filter :auth_required, only: [:new, :create, :show]
 
   def new
     @user = current_user

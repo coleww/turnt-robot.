@@ -3,17 +3,6 @@ require 'test_helper'
 
 class AuthTest < IntegrationTest
 
-  def test_user_can_signup_i_guess
-    visit '/'
-    assert page.has_content? 'register'
-  end
-
-  def test_auth_required_on_index_page
-    visit '/all'
-    assert page.has_content? 'You must login first'
-    assert page.has_content? 'login'
-  end
-
   def test_auth_required_on_post_page
     visit '/status'
     assert page.has_content? 'login'

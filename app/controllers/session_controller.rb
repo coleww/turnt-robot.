@@ -1,9 +1,4 @@
 class SessionController < ApplicationController
-  def new
-    if !!current_user
-      redirect_to '/home'
-    end
-  end
 
   def create
     user = User.find_by_username params[:username]

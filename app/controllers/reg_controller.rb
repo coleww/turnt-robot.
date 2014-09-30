@@ -1,5 +1,6 @@
 class RegController < ApplicationController
   def new
+    @register = true
   end
 
   def create
