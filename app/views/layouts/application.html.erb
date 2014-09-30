@@ -22,7 +22,7 @@
 
   <body>
     <center>
-      <% if !!@user %>
+      <% unless @register %>
         <%= render partial: 'header' %>
       <% end %>
       <%= yield %>

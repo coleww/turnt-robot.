@@ -1,7 +1,18 @@
-<ul class='nav'>
-  <li><%= button_to "turnt_up_robot", "https://github.com/coleww/turnt-robot.", method: :get %></li>
-  <li><%= button_to 'home', '/home', method: :get %></li>
-  <li><%= button_to 'index', '/all', method: :get %></li>
-  <li><%= button_to 'post', '/status', method: :get %></li>
-  <li><%= button_to "logout", '/session', method: :delete %></li>
-</ul>
+<% if !!current_user %>
+  <ul class='nav'>
+    <li><%= button_to "turnt_up_robot", "https://github.com/coleww/turnt-robot.", method: :get %></li>
+    <li><%= button_to 'home', '/home', method: :get %></li>
+    <li><%= button_to 'index', '/all', method: :get %></li>
+    <li><%= button_to 'post', '/status', method: :get %></li>
+    <li><%= button_to "logout", '/session', method: :delete %></li>
+  </ul>
+<% else %>
+  <ul class='nav'>
+    <%= flash[:error] %>
+    <%= form_tag 'session', method: :post do %>
+      <li><%= text_field_tag :username, nil, placeholder: 'username' %></li>
+      <li><%= password_field_tag :password, nil, placeholder: 'password' %></li>
+      <li><%= submit_tag("login") %></li>
+    <% end %>
+  </ul>
+<% end %>
