@@ -15,12 +15,12 @@ class IndexTest < IntegrationTest
     13.times {|i| User.create username: "bob#{i}", password: 'geegosh', status: 'test!' }
     visit '/'
     # something is
-    assert page.has_content? User.order("last_post desc").first.username
+    assert page.has_content? User.order("last_posted desc").first.username
     # not right
-    refute page.has_content? User.order("last_post desc").last.username
+    refute page.has_content? User.order("last_posted desc").last.username
     click_link 'older'
     # here, wat.
-    assert page.has_content? User.order("last_post desc").last.username
+    assert page.has_content? User.order("last_posted desc").last.username
   end
 
 end
