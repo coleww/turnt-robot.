@@ -1,6 +1,6 @@
 
 
-[![Build Status](https://travis-ci.org/coleww/turnt-robot..svg?branch=master)](https://travis-ci.org/coleww/turnt-robot.) [![Coverage Status](https://coveralls.io/repos/coleww/turnt-robot./badge.png)](https://coveralls.io/r/coleww/turnt-robot.)
+[![Build Status](https://travis-ci.org/coleww/txt-net.svg?branch=master)](https://travis-ci.org/coleww/txt-net) [![Coverage Status](https://coveralls.io/repos/coleww/turnt-robot./badge.png)](https://coveralls.io/r/coleww/turnt-robot.)
 
 
 
