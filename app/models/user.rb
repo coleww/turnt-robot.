@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  attr_accessible :status, :username, :password
+  attr_accessible :status, :username, :password, :last_posted
 
   has_secure_password
 
@@ -43,6 +43,7 @@ class User < ActiveRecord::Base
 
   def status= status
     write_attribute :status, (Rails::Html::WhiteListSanitizer.new.sanitize status, tags: %w(span), attributes: %w(class))[0...1024]
+    self.last_posted = Time.now
   end
 
   def reset_session_token!
